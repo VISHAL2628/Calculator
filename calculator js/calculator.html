@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+
+</head>
+<link rel="stylesheet" href="calculator.css">
+<body>
+    <div class="heading">
+        <h1>Welcome To My Calculator</h1>
+    </div>
+    <div class="calculator">
+        <div class="display">
+            <input class="input" type="text" />
+        </div>
+        <div class="row">
+            <button class="firstrow">AC</button>
+            <button class="firstrow">+/-</button>
+            <button class="firstrow">/</button>
+            <button class="firstrow1">-</button>
+
+        </div>
+        <div class="row">
+            <button class="secondrow">7</button>
+            <button class="secondrow">8</button>
+            <button class="secondrow">9</button>
+            <button class="secondrow1">*</button>
+
+
+        </div>
+        <div class="row">
+            <button class="thirdrow">4</button>
+            <button class="thirdrow">5</button>
+            <button class="thirdrow">6</button>
+            <button class="thirdrow1">-</button>
+
+        </div>
+        <div class="row">
+            <button class="fourthrow">1</button>
+            <button class="fourthrow">2</button>
+            <button class="fourthrow">3</button>
+            <button class="fourthrow1">+</button>
+
+        </div>
+        <div class="row">
+            <button class="zero">0</button>
+            <button class="fiverow">.</button>
+            <button class="fiverow1">=</button>
+
+        </div>
+    </div>
+    <script>
+    let string = ""
+    let buttons = document.querySelectorAll('.row');
+    Array.from(buttons).forEach((row) => {
+        row.addEventListener('click', (e) => {
+            if (e.target.innerHTML == '=') {
+                string = eval(string);
+                document.querySelector('input').value = string;
+
+            }
+            else if (e.target.innerHTML == 'AC') {
+                string = ""
+                document.querySelector('input').value = string;
+
+            }
+            else {
+                console.log(e.target)
+                string = string + e.target.innerHTML;
+                document.querySelector('input').value = string;
+            }
+        })
+    })
+
+</script>
+       
+</body>
+
+</html>

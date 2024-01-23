@@ -1,0 +1,134 @@
+body {
+    background-color: rgb(30, 29, 29);
+    color: white;
+}
+
+.calculator {
+    background-color: black;
+}
+
+.heading {
+    background-color: blue;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 25px;
+    padding: 15px;
+
+}
+
+.row .firstrow {
+    background-color: rgb(87, 82, 82);
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+.row .firstrow:hover{
+    background-color: aqua;
+}
+
+.row .firstrow1 {
+    background-color: rgb(240, 240, 15);
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.row .secondrow {
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+
+}
+.row .secondrow:hover{
+    background-color: blue;
+}
+
+.row .secondrow1 {
+    background-color: rgb(240, 240, 15);
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.row .thirdrow {
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+.row .thirdrow:hover{
+    background-color: blueviolet;
+}
+
+.row .thirdrow1 {
+    background-color: rgb(240, 240, 15);
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.row .fourthrow {
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+.row .fourthrow:hover{
+    background-color: brown;
+}
+
+.row .fourthrow1 {
+    background-color: rgb(240, 240, 15);
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+
+.row .fiverow {
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+.row .fiverow:hover{
+    background-color: orange;
+}
+
+.row .fiverow1 {
+    background-color: rgb(240, 240, 15);
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+.row .fiverow1:hover{
+    background-color: orange;
+}
+
+.row .zero {
+    background-color: grey;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    padding: 15px;
+    padding-left: 78px;
+
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+}
+
+.display .input {
+    margin: 0;
+    padding: 0;
+    padding: 35px;
+    border: 10px solid black;
+    border-radius: 34px;
+}
